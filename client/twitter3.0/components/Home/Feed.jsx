@@ -46,7 +46,7 @@ function Feed() {
                 < Post
                     key={index}
                     displayName={tweet.displayname}
-                    username={`${tweet.username.slice(1, 4)}...${tweet.username - 4}`}
+                    username={`${tweet.username.slice(1, 4)}...${tweet.username.slice(-4)}`}
                     avatar={tweet.avatar}
                     text={tweet.text}
                     isProfileImageNft={tweet.isProfileImageNft}
