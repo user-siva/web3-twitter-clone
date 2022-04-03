@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useState } from 'react';
 import { FiMoreHorizontal, FiBell } from 'react-icons/fi';
 import { VscTwitter } from 'react-icons/vsc';
@@ -84,7 +85,7 @@ function Sidebar({ selectedIcon = "Home" }) {
                     text='Profile'
                     isActive={Boolean(selected === 'Profile')}
                     setSelected={setSelected}
-                    redirect={'/'}
+                    redirect={'/profile'}
                 />
                 <SidebarOptions
                     Icon={<CgMoreO />}
